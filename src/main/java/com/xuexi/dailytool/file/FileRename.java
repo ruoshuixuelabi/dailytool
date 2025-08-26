@@ -15,8 +15,8 @@ import java.util.stream.Stream;
 @Slf4j
 public class FileRename {
     public static void main(String[] args) throws IOException {
-        try (Stream<Path> list = Files.list(Paths.get("H:\\深入剖析阿里核心微服务技术Spring Cloud Alibaba\\视频"))) {
-            list.forEach(path -> rename(path, "【瑞客论坛 www.ruike1.com】"));
+        try (Stream<Path> list = Files.list(Paths.get("E:\\"))) {
+            list.forEach(path -> rename(path, "——关注精品公众号【偷着学】，免费领取更多高中精品资源！"));
         }
     }
 

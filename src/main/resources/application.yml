@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://192.168.2.201:3306/dssa?useUnicode=true&characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&tinyInt1isBit=false&rewriteBatchedStatements=true&useCompression=true"
+    username: root
+    #    password: "Rhzz_dsp2020"
+    password: dssa123456
+  kafka:
+    bootstrap-servers: 192.168.1.238:9092
+debug: true

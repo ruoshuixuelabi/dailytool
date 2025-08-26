@@ -1,0 +1,26 @@
+2025-02-25 17:23:27.749 [ main ] - [ INFO  ] [ org.docx4j.jaxb.Context : 87 ] - java.vendor=Oracle Corporation
+2025-02-25 17:23:27.754 [ main ] - [ INFO  ] [ org.docx4j.jaxb.Context : 88 ] - java.version=17.0.11
+2025-02-25 17:23:27.754 [ main ] - [ INFO  ] [ org.docx4j.jaxb.Context : 89 ] - java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2025-02-25 17:23:29.070 [ main ] - [ INFO  ] [ org.docx4j.jaxb.Context : 173 ] - JAXB Reference Implementation is in use.
+2025-02-25 17:23:29.220 [ main ] - [ WARN  ] [ org.docx4j.utils.ResourceUtils : 99 ] - Couldn't get resource: docx4j.properties
+2025-02-25 17:23:29.222 [ main ] - [ WARN  ] [ org.docx4j.Docx4jProperties : 24 ] - Couldn't find/read docx4j.properties; docx4j.properties not found via classloader.
+2025-02-25 17:23:29.336 [ main ] - [ INFO  ] [ org.docx4j.XmlUtils : 196 ] - setProperty com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl
+2025-02-25 17:23:29.337 [ main ] - [ WARN  ] [ org.docx4j.XmlUtils : 214 ] - actual SAXParserFactory: com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl
+2025-02-25 17:23:29.338 [ main ] - [ INFO  ] [ org.docx4j.XmlUtils : 249 ] - setProperty com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
+2025-02-25 17:23:29.339 [ main ] - [ WARN  ] [ org.docx4j.XmlUtils : 269 ] - actual DocumentBuilderFactory: com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
+2025-02-25 17:23:29.386 [ main ] - [ INFO  ] [ o.d.openpackaging.contenttype.ContentTypeManager : 977 ] - Detected WordProcessingML package 
+2025-02-25 17:23:29.390 [ main ] - [ INFO  ] [ o.d.openpackaging.contenttype.ContentTypeManager : 977 ] - Detected WordProcessingML package 
+2025-02-25 17:23:29.391 [ main ] - [ INFO  ] [ org.docx4j.openpackaging.io3.Load3 : 185 ] - Instantiated package of type org.docx4j.openpackaging.packages.WordprocessingMLPackage
+2025-02-25 17:23:29.418 [ main ] - [ INFO  ] [ org.docx4j.utils.XPathFactoryUtil : 38 ] - xpath implementation: org.docx4j.org.apache.xpath.jaxp.XPathFactoryImpl
+2025-02-25 17:23:29.423 [ main ] - [ INFO  ] [ o.d.openpackaging.contenttype.ContentTypeManager : 607 ] - Using DocPropsCustomPart ...
+2025-02-25 17:23:29.424 [ main ] - [ INFO  ] [ org.docx4j.openpackaging.io3.Load3 : 206 ] - package read;  elapsed time: 159 ms
+2025-02-25 17:23:29.617 [ main ] - [ INFO  ] [ o.d.o.parts.relationships.RelationshipsPart : 498 ] - adding part with proposed name: /word/heade-first.xml
+2025-02-25 17:23:30.149 [ main ] - [ INFO  ] [ o.d.o.parts.relationships.RelationshipsPart : 498 ] - adding part with proposed name: /media/background.png
+2025-02-25 17:23:30.163 [ main ] - [ INFO  ] [ o.d.o.parts.relationships.RelationshipsPart : 498 ] - adding part with proposed name: /word/footer-first.xml
+2025-02-25 17:23:30.164 [ main ] - [ INFO  ] [ org.docx4j.openpackaging.parts.Parts : 75 ] - Overwriting existing part /word/footer-first.xml
+2025-02-25 17:23:30.164 [ main ] - [ INFO  ] [ o.d.o.parts.relationships.RelationshipsPart : 498 ] - adding part with proposed name: /word/heade-default.xml
+2025-02-25 17:23:30.219 [ main ] - [ INFO  ] [ o.d.o.parts.relationships.RelationshipsPart : 498 ] - adding part with proposed name: /media/background.png
+2025-02-25 17:23:30.223 [ main ] - [ INFO  ] [ o.d.o.parts.relationships.RelationshipsPart : 498 ] - adding part with proposed name: /word/footer-default.xml
+2025-02-25 17:23:30.224 [ main ] - [ INFO  ] [ org.docx4j.openpackaging.parts.Parts : 75 ] - Overwriting existing part /word/footer-default.xml
+2025-02-25 17:23:30.334 [ main ] - [ INFO  ] [ org.docx4j.jaxb.NamespacePrefixMapperUtils : 81 ] - Using ri.NamespacePrefixMapper, which is suitable for the JAXB RI
+2025-02-25 17:23:30.345 [ main ] - [ INFO  ] [ org.docx4j.jaxb.NamespacePrefixMapperUtils : 129 ] - Using ri.NamespacePrefixMapperRelationshipsPart, which is suitable for the JAXB RI

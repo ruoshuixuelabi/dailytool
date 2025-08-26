@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xuexi.dailytool.FileDataTypeMapper">
+  <resultMap id="BaseResultMap" type="com.xuexi.dailytool.FileDataType">
+    <!--@mbg.generated-->
+    <!--@Table file_data_type-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="match_type" jdbcType="VARCHAR" property="matchType" />
+    <result column="data_structure" jdbcType="VARCHAR" property="dataStructure" />
+    <result column="source_type" jdbcType="INTEGER" property="sourceType" />
+    <result column="is_sensitive" jdbcType="INTEGER" property="isSensitive" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `name`, match_type, data_structure, source_type, is_sensitive
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from file_data_type
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from file_data_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.xuexi.dailytool.FileDataType" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into file_data_type (`name`, match_type, data_structure, 
+      source_type, is_sensitive)
+    values (#{name,jdbcType=VARCHAR}, #{matchType,jdbcType=VARCHAR}, #{dataStructure,jdbcType=VARCHAR}, 
+      #{sourceType,jdbcType=INTEGER}, #{isSensitive,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.xuexi.dailytool.FileDataType" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into file_data_type
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="matchType != null">
+        match_type,
+      </if>
+      <if test="dataStructure != null">
+        data_structure,
+      </if>
+      <if test="sourceType != null">
+        source_type,
+      </if>
+      <if test="isSensitive != null">
+        is_sensitive,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="matchType != null">
+        #{matchType,jdbcType=VARCHAR},
+      </if>
+      <if test="dataStructure != null">
+        #{dataStructure,jdbcType=VARCHAR},
+      </if>
+      <if test="sourceType != null">
+        #{sourceType,jdbcType=INTEGER},
+      </if>
+      <if test="isSensitive != null">
+        #{isSensitive,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xuexi.dailytool.FileDataType">
+    <!--@mbg.generated-->
+    update file_data_type
+    <set>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="matchType != null">
+        match_type = #{matchType,jdbcType=VARCHAR},
+      </if>
+      <if test="dataStructure != null">
+        data_structure = #{dataStructure,jdbcType=VARCHAR},
+      </if>
+      <if test="sourceType != null">
+        source_type = #{sourceType,jdbcType=INTEGER},
+      </if>
+      <if test="isSensitive != null">
+        is_sensitive = #{isSensitive,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xuexi.dailytool.FileDataType">
+    <!--@mbg.generated-->
+    update file_data_type
+    set `name` = #{name,jdbcType=VARCHAR},
+      match_type = #{matchType,jdbcType=VARCHAR},
+      data_structure = #{dataStructure,jdbcType=VARCHAR},
+      source_type = #{sourceType,jdbcType=INTEGER},
+      is_sensitive = #{isSensitive,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
